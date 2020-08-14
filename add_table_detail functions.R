@@ -73,11 +73,19 @@ add_table_detail_red <- function(kable_table, row, column, comments){
   
 }
 
+# Example below
+
 
 mtcars[1:4, 1:4] %>% 
   kable(escape = F) %>% 
   kable_styling() %>% 
   add_table_detail_red(c(1,3), c(1,1), c("Poor car", "Better Car"))
+
+
+# Improvements: Seems to be a space between the superscript and the text in the table
+# May be worth trimming the text either side of the text? 
+# Other wise this does seem to work okay in fairness at the moment .
+
 
 
 
