@@ -8,7 +8,8 @@ library(kableExtra)
 library(roxygen2)
 
 
-# Would like to get to the stage where i can change the information inside xml.
+# For more information on how to alter XML tables in respect of kable outputs 
+# worth looking at  https://arm.rbind.io/slides/extend.html#1
 
 add_table_detail <- function(kable_table, row, column, comments){
 
